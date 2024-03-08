@@ -1,0 +1,45 @@
+/* Common styles for both mobile and desktop */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  /* Styles specific to mobile devices */
+  .desktop {
+    display: none; /* Hide elements meant for desktop */
+  }
+  /* Mobile-specific styles */
+  .mobile {
+    display: block; /* Show elements meant for mobile */
+    background-color: aqua;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  /* Styles specific to desktop devices */
+  .mobile {
+    display: none; /* Hide elements meant for mobile */
+  }
+  /* Desktop-specific styles */
+  .desktop {
+    display: block; /* Show elements meant for desktop */
+    background-color: rgb(221, 64, 64);
+    
+  }
+  .navbar{
+    margin-left: 200px; /* Adjust margin to account for sidebar width */
+    padding: 20px; /* Add padding */
+  }
+  nav {
+    width: 200px; /* Set width of the sidebar */
+    height: 100%; /* Make it full height */
+    position: fixed; /* Position it fixed so it remains visible when scrolling */
+    top: 20;
+    left: 0;
+    background-color: #333;
+  }
+}
