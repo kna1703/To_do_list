@@ -3,56 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Page</title>
+    <title>to do list</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Content for mobile devices -->
-    <div class="mobile">
-      <h1>Mobile Version</h1>
-      <p>This is the content for mobile devices.</p>
-      <ul>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-      </ul>
-    </div>
+    <script src="script.js"></script>
+    <header>
+      <div class="name_box">
+        <img class="logo" src="images/logo(2).png" alt="text_logo" />
+      </div>
+      <div>
+        <a href="profile.html"
+          ><img
+            class="profile_icon"
+            src="images/person-circle.svg"
+            alt="profile"
+        /></a>
+      </div>
+    </header>
+    <main>
+        <!--je laisse cette partie pour apres il reste du travail ici dans le css-->
+      <section class="nav_bar">
+        <div class="nav_box">
+          <a href="">
+            <h4>
+              <img class="nav_icon" src="images/calendar3.svg" alt="agenda">agenda
+            </h4>
+          </a>
+        </div>
+        <div class="nav_box">
+          <a href="">
+            <h4>
+              <img class="nav_icon" src="images/clock-history.svg" alt="history">history
+            </h4>
+          </a>
+        </div>
+        <div class="nav_box">
+          <a href="">
+            <h4>
+              <img class="nav_icon" src="images/sliders.svg" alt="settings">settings
+            </h4>
+          </a>
+        </div>
+      </section>
+      <section class="list">
+        <h1>tasks</h1>
+        <!-- Juste un exemple ici je pense c'est le JS qui va remplacer ça ici pas de HTML répétitif -->
+        <div class="tasks">
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+            <div class="task">
+                <input type="checkbox" id="task1" class="task-checkbox">
+                <label for="task1" class="task-label">Task 1</label>
+            </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- Content for desktop devices -->
-    <div class="desktop">
+    <footer>
+      <p>©️<img class="logo_footer" src="images/logo(2).png"</p>
+    </footer>
+  </body>
+</html>
+
+<!-- Content for desktop devices -->
+<!-- <div class="desktop">
       <header class="navbar">
         <h1>Desktop Version</h1>
         <p>This is the content for desktop devices.</p>
@@ -65,7 +114,5 @@
             <li></li>
           </ul>
         </nav>
-      </aside>
-    </div>
-  </body>
-</html>
+      </aside>  
+    </div>-->

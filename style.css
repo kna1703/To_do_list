@@ -2,44 +2,140 @@
 body {
   margin: 0;
   padding: 0;
+  
+}
+
+header{
+  background-color: #AA66BF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius:0 0 12px 12px;
+  position: relative; /* Add position property */
+  z-index: 1; /* Add z-index property to ensure the header is above the nav box */
+}
+.profile_icon{
+  width: 3rem;
+  height: auto;
+}
+.name_box {
+  margin-right: 10px;
+}
+.logo{
+  width: 100px;
+  height: auto;
+}
+
+
+/* un petit ajustement sur les icônes +  texte qui manque*/
+.nav_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative; /* Add position property */
+  z-index: 0; /* Add z-index property to ensure the nav box is below the header */
+  
+}
+.nav_box{
+  border-bottom: 1px solid transparent black; 
+  border-right: 1px solid transparent; 
+  border-left: 1px solid transparent black;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%;
+  margin-top: -10px; /* Adjust margin to fill the empty space ()*/
+  background-color: #895fb6; /* A changer */
+
+}
+.nav_icon{
+  width: 1.2rem;  
+  height: auto; 
+  margin-right: 5px; 
+  margin-left: 5px;
+
+}
+a {
+  text-decoration: none !important; /* Override any other styles */
+  color: #212529 !important; 
+}
+
+
+
+
+
+/*
+ cette partie a changer avec l'html 
+et le scroll marche pas correctement 
+et il manque plein de choses
+ */
+
+/* debut */
+.list {
+  height: auto;
+  padding: 18px;
+}
+h1{
   text-align: center;
 }
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-  /* Styles specific to mobile devices */
-  .desktop {
-    display: none; /* Hide elements meant for desktop */
-  }
-  /* Mobile-specific styles */
-  .mobile {
-    display: block; /* Show elements meant for mobile */
-    background-color: aqua;
-  }
+.tasks {
+  overflow-y: scroll; /* Add scroll view */
+  max-height: 300px; /* Set maximum height for scroll view */
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 601px) {
-  /* Styles specific to desktop devices */
-  .mobile {
-    display: none; /* Hide elements meant for mobile */
-  }
-  /* Desktop-specific styles */
-  .desktop {
-    display: block; /* Show elements meant for desktop */
-    background-color: rgb(221, 64, 64);
-    
-  }
-  .navbar{
-    margin-left: 200px; /* Adjust margin to account for sidebar width */
-    padding: 20px; /* Add padding */
-  }
-  nav {
-    width: 200px; /* Set width of the sidebar */
-    height: 100%; /* Make it full height */
-    position: fixed; /* Position it fixed so it remains visible when scrolling */
-    top: 20;
-    left: 0;
-    background-color: #333;
-  }
+.task {
+  margin-bottom: 10px;
 }
+
+.task-checkbox {
+  display: none; /* Hide default checkbox */
+}
+
+.task-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.task-checkbox:checked + .task-label::before {
+  background-color: #007bff;
+}
+/*fin*/
+
+
+
+
+
+
+
+
+/* A changer quelque trucs */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #AA66BF; /* Add background color*/
+  border-top: 1px solid #ced4da; 
+  text-align: center;
+  padding:  0; 
+}
+
+.logo_footer {
+  width: 100px; 
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Ensure image behaves like an inline element */
+  margin-top: 5px; 
+}
+
