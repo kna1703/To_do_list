@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>to do list</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/clipboard-check.svg">
   </head>
   <body>
     <script src="script.js"></script>
@@ -49,48 +50,23 @@
       <section class="list">
         <h1>tasks</h1>
         <!-- Juste un exemple ici je pense c'est le JS qui va remplacer ça ici pas de HTML répétitif -->
-        <div class="tasks">
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
-            <div class="task">
-                <input type="checkbox" id="task1" class="task-checkbox">
-                <label for="task1" class="task-label">Task 1</label>
-            </div>
+        
+        <div class="input">
+          <input type="text" id="task-name" placeholder="Enter task name">
+          <div class="color_input">
+          <label for="priority-color">color</label>
+          <input type="color" id="priority-color" disabled> <!-- Disabled by default -->
         </div>
+        <div class="checkbox_input">
+          <input type="checkbox" id="important-checkbox">
+          <label for="important-checkbox">Important</label>
+        </div>
+          <button id="add-task-btn">Add Task</button>
+        </div>
+        <div id="tasks-container" class="tasks">
+          <!-- Tasks will be added dynamically here -->
+        </div>
+        
       </section>
     </main>
 

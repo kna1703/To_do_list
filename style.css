@@ -1,141 +1,160 @@
+/* Root colors */
+:root {
+  --primary-color: #AA66BF;
+  --secondary-color: #895fb6; 
+}
+
 /* Common styles for both mobile and desktop */
 body {
   margin: 0;
   padding: 0;
-  
 }
 
-header{
-  background-color: #AA66BF;
+header {
+  background-color: var(--primary-color); 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   border: 1px solid;
-  border-radius:0 0 12px 12px;
-  position: relative; /* Add position property */
-  z-index: 1; /* Add z-index property to ensure the header is above the nav box */
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  z-index: 1;
 }
-.profile_icon{
+
+.profile_icon {
   width: 3rem;
   height: auto;
 }
+
 .name_box {
   margin-right: 10px;
 }
-.logo{
+
+.logo {
   width: 100px;
   height: auto;
 }
 
-
-/* un petit ajustement sur les icônes +  texte qui manque*/
-.nav_bar{
+/* Navigation bar */
+.nav_bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative; /* Add position property */
-  z-index: 0; /* Add z-index property to ensure the nav box is below the header */
-  
+  position: relative;
+  z-index: 0;
 }
-.nav_box{
-  border-bottom: 1px solid transparent black; 
-  border-right: 1px solid transparent; 
+
+.nav_box {
+  border-bottom: 1px solid transparent black;
+  border-right: 1px solid transparent;
   border-left: 1px solid transparent black;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   width: 100%;
-  margin-top: -10px; /* Adjust margin to fill the empty space ()*/
-  background-color: #895fb6; /* A changer */
-
+  margin-top: -10px;
+  background-color: var(--secondary-color); 
 }
-.nav_icon{
-  width: 1.2rem;  
-  height: auto; 
-  margin-right: 5px; 
+
+.nav_icon {
+  width: 1.2rem;
+  height: auto;
+  margin-right: 5px;
   margin-left: 5px;
-
 }
+
 a {
-  text-decoration: none !important; /* Override any other styles */
-  color: #212529 !important; 
+  text-decoration: none !important;
+  color: #212529 !important;
 }
 
-
-
-
-
-/*
- cette partie a changer avec l'html 
-et le scroll marche pas correctement 
-et il manque plein de choses
- */
-
-/* debut */
+/* Task list styles */
 .list {
   height: auto;
   padding: 18px;
+  border: 2px solid;
+  backdrop-filter: blur(10px);
+  overflow: auto;
+  margin-top: 18px;
 }
-h1{
+
+h1 {
   text-align: center;
 }
-.tasks {
-  overflow-y: scroll; /* Add scroll view */
-  max-height: 300px; /* Set maximum height for scroll view */
+
+.input {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color_input,
+.checkbox_input,
+#add-task-btn {
+  flex: 1;
+}
+
+.color_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.checkbox_input {
+  display: flex;
+  align-items: center;
+}
+
+#add-task-btn {
+  flex-shrink: 0;
 }
 
 .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.task-checkbox {
-  display: none; /* Hide default checkbox */
-}
-
-.task-label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.task-label::before {
-  content: "";
-  display: inline-block;
+.priority-circle {
   width: 20px;
   height: 20px;
-  border: 1px solid #ccc;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.task-checkbox:checked + .task-label::before {
-  background-color: #007bff;
+.tasks {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  background-color: rgb(127, 162, 218);
+  padding: 10px;
 }
-/*fin*/
 
+.delete-btn,
+.modify-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-/* A changer quelque trucs */
+/* Footer styles */
 footer {
-  position: fixed;
+  position:fixed;
   bottom: 0;
   width: 100%;
-  background-color: #AA66BF; /* Add background color*/
-  border-top: 1px solid #ced4da; 
+  background-color: var(--primary-color); /* Use primary color variable */
+  border-top: 1px solid #ced4da;
   text-align: center;
-  padding:  0; 
+  padding: 0;
+  display: block;
 }
 
 .logo_footer {
-  width: 100px; 
-  height: auto; /* Maintain aspect ratio */
-  display: inline-block; /* Ensure image behaves like an inline element */
-  margin-top: 5px; 
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  margin-top: 5px;
 }
-
