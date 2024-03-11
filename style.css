@@ -1,60 +1,110 @@
-/* Common styles for both mobile and desktop */
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #d6b3df;
+}
+
+.appLogo {
+  height: 2rem;
+  margin: 1rem auto;
+}
+
+.profileLogo {
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+/* body */
+.mobilecontainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 10px;
+}
+
+.toDo {
+  width: 100%;
+  max-width: auto;
+  background: white;
+  margin: 100px auto 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#input-box {
+  background-color: #EAE3E3;
+}
+
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  border-radius: 40px;
+  background-color: #d6b3df;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+  padding-left: 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-image: url(images/unchecked-10-32.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked-5-32.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 2em;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
   text-align: center;
+  border-radius: 50%;
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-
-  /* Styles specific to mobile devices */
-  .desktop {
-    display: none;
-    /* Hide elements meant for desktop */
-  }
-
-  /* Mobile-specific styles */
-  .mobile {
-    display: block;
-    /* Show elements meant for mobile */
-    background-color: aqua;
-  }
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 601px) {
-
-  /* Styles specific to desktop devices */
-  .mobile {
-    display: none;
-    /* Hide elements meant for mobile */
-  }
-
-  /* Desktop-specific styles */
-  .desktop {
-    display: block;
-    /* Show elements meant for desktop */
-    background-color: rgb(221, 64, 64);
-
-  }
-
-  .navbar {
-    margin-left: 200px;
-    /* Adjust margin to account for sidebar width */
-    padding: 20px;
-    /* Add padding */
-  }
-
-  nav {
-    width: 200px;
-    /* Set width of the sidebar */
-    height: 100%;
-    /* Make it full height */
-    position: fixed;
-    /* Position it fixed so it remains visible when scrolling */
-    top: 20;
-    left: 0;
-    background-color: #333;
-  }
+ul li span:hover {
+  background: #d6b3df;
 }

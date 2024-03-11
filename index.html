@@ -1,71 +1,35 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Content for mobile devices -->
-    <div class="mobile">
-      <h1>Mobile Version</h1>
-      <p>This is the content for mobile devices.</p>
-      <ul>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-        <li>
-          <h3>test</h3>
-        </li>
-      </ul>
-    </div>
+<html lang="en">
 
-    <!-- Content for desktop devices -->
-    <div class="desktop">
-      <header class="navbar">
-        <h1>Desktop Version</h1>
-        <p>This is the content for desktop devices.</p>
-      </header>
-      <aside>
-        <nav>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do list | Tout Doux </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="/images/td4.png" alt="To Do logo" class="appLogo" />
+      <img src="/images/Vector.png" alt="profileLogo" class="profileLogo" />
     </div>
-  </body>
+  </header>
+  <!-- Content for mobile devices -->
+  <div class="mobileContaioner">
+    <div class="toDo">
+      <input type="text" id="input-box" placeholder="Add your note">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="list-container">
+      <!-- <li class="checked">Task 1</li> -->
+      <!-- <li>Task 2</li>
+      <li>Task 3</li>
+      <li>Task 4</li>
+      <li>Task 5</li> -->
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
