@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /* work in progress (il faut du changemnt sur cela et le style aussi dans css)*/
-
+//debut
 
 
   // Function to display a modal or form for modifying the task
@@ -77,6 +77,11 @@ document.addEventListener("DOMContentLoaded", function() {
       modal.remove();
     });
   }
+// fin
+
+
+
+
 
   // Toggle color picker based on important checkbox
   document.getElementById("important-checkbox").addEventListener("change", function() {
