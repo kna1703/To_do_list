@@ -9,9 +9,14 @@ function addTask() {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+        let del = document.createElement("span");
+        del.classList.add("delete")
+        del.innerHTML = "\u00d7";
+        li.appendChild(del);
+        let modify = document.createElement("span")
+        modify.innerHTML = "\u270E";
+        modify.classList.add("modify")
+        li.appendChild(modify);
     }
     inputBox.value = "";
     saveData();
@@ -22,12 +27,38 @@ listContainer.addEventListener("click", function (e) {
         e.target.classList.toggle("checked");
         saveData();
 
-    }
-    else if (e.target.tagName === "SPAN") {
+
+        // else if (e.target.classList.contains("modify")) {
+        //     let newText = prompt("Enter new text:", e.target.parentElement.textContent.trim());
+        //     if (newText !== null) {
+        //         e.target.parentElement.textContent = newText;
+        //         saveData();
+        //     }
+
+
+    } else if (e.target.classList.contains("modify")) {
+        let taskText = e.target.parentElement.firstChild;
+        let newText = prompt("Enter new text:", taskText.textContent.trim());
+        if (newText !== null) {
+            taskText.textContent = newText;
+            saveData();
+        }
+
+
+        let modify = document.createElement("span");
+        modify.innerHTML = "\u270E";
+        modify.classList.add("modify");
+        e.target.parentElement.appendChild(modify);
+
+        let del = document.createElement("span");
+        del.innerHTML = "\u00d7";
+        e.target.parentElement.appendChild(del);
+
+    } else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
         saveData();
     }
-}, false)
+}, false);
 
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);

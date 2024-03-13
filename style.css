@@ -21,12 +21,21 @@
   margin: 1rem;
 }
 
+/* Navbar */
+.calenderLogo {
+  height: 60px;
+}
+
+.calenderLogo {
+  height: 60px;
+}
+
+
 /* body */
-.mobilecontainer {
-  width: 100%;
+.mobileContainer {
   min-height: 100vh;
   background-color: white;
-  padding: 10px;
+  padding: 0 10em 0 10em;
 }
 
 .toDo {
@@ -45,6 +54,21 @@
   background-color: #EAE3E3;
 }
 
+footer {
+  background-color: #d6b3df;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8PX;
+}
+
+.footerLogo {
+  height: 1rem;
+  display: inline-block;
+}
+
 
 input {
   flex: 1;
@@ -57,7 +81,7 @@ input {
 button {
   border: none;
   outline: none;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border-radius: 40px;
   background-color: #d6b3df;
   cursor: pointer;
@@ -94,7 +118,22 @@ ul li.checked::before {
   background-image: url(images/checked-5-32.png);
 }
 
-ul li span {
+.delete {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.delete:hover {
+  background: #d6b3df;
+}
+
+.modify {
   position: absolute;
   right: 2em;
   top: 5px;
@@ -105,6 +144,6 @@ ul li span {
   border-radius: 50%;
 }
 
-ul li span:hover {
+.modify:hover {
   background: #d6b3df;
 }
