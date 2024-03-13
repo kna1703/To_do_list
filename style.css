@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #d6b3df;
+}
+
+.appLogo {
+  height: 2rem;
+  margin: 1rem auto;
+}
+
+.profileLogo {
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+/* Navbar */
+.calenderLogo {
+  height: 60px;
+}
+
+.calenderLogo {
+  height: 60px;
+}
+
+
+/* body */
+.mobileContainer {
+  min-height: 100vh;
+  background-color: white;
+  padding: 0 10em 0 10em;
+}
+
+.toDo {
+  width: 100%;
+  max-width: auto;
+  background: white;
+  margin: 100px auto 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#input-box {
+  background-color: #EAE3E3;
+}
+
+footer {
+  background-color: #d6b3df;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8PX;
+}
+
+.footerLogo {
+  height: 1rem;
+  display: inline-block;
+}
+
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 40px;
+  background-color: #d6b3df;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+  padding-left: 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-image: url(images/unchecked-10-32.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked-5-32.png);
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.delete:hover {
+  background: #d6b3df;
+}
+
+.modify {
+  position: absolute;
+  right: 2em;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.modify:hover {
+  background: #d6b3df;
+}
