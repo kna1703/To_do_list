@@ -1,0 +1,102 @@
+:root {
+  --main-color: #d6b3df;
+  --second-color: #E1E1E1;
+  --headertitle: #DFCBCB;
+  --main-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
+  /* width: 100%; */
+  margin: 50px;
+}
+
+.LogoHeader {
+  width: auto;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+h4 {
+  padding: 10px 0px 10px 0px;
+}
+
+.mainSignUp,
+h2 {
+  text-align: center;
+}
+
+.blocSignup {
+  padding: 16px 25px 16px 25px;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  height: auto;
+}
+
+.mainpage {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  margin: auto;
+  /* padding: 2rem; */
+}
+
+footer {
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.footerLogo {
+  height: 10px;
+  display: inline-block;
+}
+
+img {
+  height: 40px;
+}
+
+input {
+  width: 96%;
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: #EAE3E3;
+}
+
+.buttonSignup {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  /* width: 50px; */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Mobile style */
+@media only screen and (max-width: 600px) {}
+
+/* Tablette style */
+@media only screen and (min-width: 601px) and (max-width: 999px) {}
+
+/* Desktop style */
+@media only screen and (min-width: 1000px) {}
