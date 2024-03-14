@@ -1,14 +1,17 @@
+:root{
+  --primary-color:  #d6b3df;
+  --secondery-color: ;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* header */
 .header {
   display: flex;
   justify-content: center;
-  background-color: #d6b3df;
+  background-color: var(--primary-color);
 }
 
 .appLogo {
@@ -22,6 +25,12 @@
 }
 
 /* Navbar */
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
 .calenderLogo {
   height: 60px;
 }
@@ -134,7 +143,7 @@ ul li.checked::before {
 }
 
 .delete:hover {
-  background: #d6b3df;
+  background: var(--primary-color);
 }
 
 .modify {
@@ -149,5 +158,5 @@ ul li.checked::before {
 }
 
 .modify:hover {
-  background: #d6b3df;
+  background: var(--primary-color);
 }
