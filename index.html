@@ -1,94 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>to do list</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/clipboard-check.svg">
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <header>
-      <div class="name_box">
-        <img class="logo" src="images/logo(2).png" alt="text_logo" />
-      </div>
-      <div>
-        <a href="profile.html"
-          ><img
-            class="profile_icon"
-            src="images/person-circle.svg"
-            alt="profile"
-        /></a>
-      </div>
-    </header>
-    <main>
-        <!--je laisse cette partie pour apres il reste du travail ici dans le css-->
-      <section class="nav_bar">
-        <div class="nav_box">
-          <a href="">
-            <h4>
-              <img class="nav_icon" src="images/calendar3.svg" alt="agenda">agenda
-            </h4>
-          </a>
-        </div>
-        <div class="nav_box">
-          <a href="">
-            <h4>
-              <img class="nav_icon" src="images/clock-history.svg" alt="history">history
-            </h4>
-          </a>
-        </div>
-        <div class="nav_box">
-          <a href="">
-            <h4>
-              <img class="nav_icon" src="images/sliders.svg" alt="settings">settings
-            </h4>
-          </a>
-        </div>
-      </section>
-      <section class="list">
-        <h1>tasks</h1>
-        <!-- Juste un exemple ici je pense c'est le JS qui va remplacer ça ici pas de HTML répétitif -->
-        
-        <div class="input">
-          <input type="text" id="task-name" placeholder="Enter task name">
-          <div class="color_input">
-          <label for="priority-color">color</label>
-          <input type="color" id="priority-color" disabled> <!-- Disabled by default -->
-        </div>
-        <div class="checkbox_input">
-          <input type="checkbox" id="important-checkbox">
-          <label for="important-checkbox">Important</label>
-        </div>
-          <button id="add-task-btn">Add Task</button>
-        </div>
-        <div id="tasks-container" class="tasks">
-          <!-- Tasks will be added dynamically here -->
-        </div>
-        
-      </section>
-    </main>
+<html lang="en">
 
-    <footer>
-      <p>©️<img class="logo_footer" src="images/logo(2).png"</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do list | Tout Doux </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="/images/td4.png" alt="To Do logo" class="appLogo" />
+      <img src="/images/Vector.png" alt="profileLogo" class="profileLogo" />
+    </div>
+  </header>
+  <nav class="navbar">
+    
+    <div><a href=><img src="home.png" alt="homeLogo" class="clanderLogo"</a></div>
+    <div><a href="agenda.html"><img src="/images/calender.png" alt="calenderLogo" class="calenderLogo" /></a></div>
+    <div><a href=""><img src="/images/history.png" alt="calenderLogo" class="calenderLogo" /></a></div>
+   
+  </nav>
+  <!-- Content for mobile devices -->
+  <div class="mobileContainer">
+    <div class="toDo">
+      <input type="text" id="input-box" placeholder="Add your note">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="list-container">
+      <!-- <li class="checked">Task 1</li> -->
+      <!-- <li>Task 2</li>
+      <li>Task 3</li>
+      <li>Task 4</li>
+      <li>Task 5</li> -->
+    </ul>
+  </div>
+  <footer>
+    <p>©️</p><img src="/images/td4.png" alt="To Do logo" class="footerLogo" />
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-<!-- Content for desktop devices -->
-<!-- <div class="desktop">
-      <header class="navbar">
-        <h1>Desktop Version</h1>
-        <p>This is the content for desktop devices.</p>
-      </header>
-      <aside>
-        <nav>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </aside>  
-    </div>-->
