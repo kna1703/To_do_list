@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #d6b3df;
+    --secondery-color: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.appLogo {
+    height: 2rem;
+    margin: 1rem auto;
+}
+
+.profileLogo {
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.navLogo {
+    height: 60px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 15px auto;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8PX;
+}
+
+.footerLogo {
+    height: 1rem;
+    display: inline-block;
+}

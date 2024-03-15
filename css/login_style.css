@@ -1,7 +1,7 @@
 :root {
     --main-color: #d6b3df;
     --second-color: #E1E1E1;
-    --headertitle:#DFCBCB;
+    --headertitle: #DFCBCB;
     --main-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -9,7 +9,8 @@
     margin: 0;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     background-color: var(--main-color);
@@ -21,21 +22,25 @@ img {
 }
 
 body {
+    background-color: var(--main-color);
+    /* min-height: 100vh; */
     line-height: 1.5;
-    font-family: var(--main-font) 
+    font-family: var(--main-font)
 }
 
 .mainpage {
     background-color: var(--main-color);
+    padding: 2em 10em 2em 10em;
 }
 
-.mainlogin, h5 {
+.mainlogin,
+h5 {
     text-align: center;
 }
 
 .bloclogin {
     padding: 16px 25px 16px 25px;
-    width:50%;
+    width: 50%;
     margin: 0 auto;
     background: white;
     border-radius: 10px;
@@ -57,15 +62,15 @@ input {
     justify-content: center;
     margin: 0 auto;
     border-radius: 10px;
-    width:60px;
+    width: 60px;
     margin-top: 15px;
     margin-bottom: 10px;
-   }
+}
 
 h5 {
     margin-top: 10px;
 }
-   
+
 .continue {
 
     display: flex;
@@ -74,8 +79,10 @@ h5 {
     justify-content: space-between;
 }
 
-.apple, .google, .facebook {
-    color:white;
+.apple,
+.google,
+.facebook {
+    color: white;
     display: inline;
     margin: 5px;
     border-radius: 5px;
@@ -90,28 +97,23 @@ h5 {
 }
 
 .google {
-    background-color:#4185F5;
+    background-color: #4185F5;
 }
 
 .facebook {
     background-color: #3C5A95;
 }
 
-footer{
+footer {
     padding: 15px;
 }
 
 
 /* Mobile style */
-@media only screen and (max-width: 600px) { 
-}
+@media only screen and (max-width: 600px) {}
 
 /* Tablette style */
-@media only screen and (min-width: 601px) and (max-width: 999px) {
-
-}
+@media only screen and (min-width: 601px) and (max-width: 999px) {}
 
 /* Desktop style */
-@media only screen and (min-width: 1000px) {
-
-}
+@media only screen and (min-width: 1000px) {}
