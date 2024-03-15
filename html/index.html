@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do list | Tout Doux </title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="../images/td4.png" alt="To Do logo" class="appLogo" />
+      <img src="../images/profile.png" alt="profileLogo" class="profileLogo" />
+    </div>
+  </header>
+  <nav class="navbar">
+    <div><a href="/html/index.html"><img src="../images/home.png" alt="homeLogo" class="navLogo" /></a></div>
+    <div><a href="/html/agenda.html"><img src="../images/calender.png" alt="calenderLogo" class="navLogo" /></a></div>
+    <div><a href="/html/history.html"><img src="../images/history.png" alt="historyLogo" class="navLogo" /></a></div>
+  </nav>
+  <!-- Content for mobile devices -->
+  <div class="mobileContainer">
+    <div class="toDo">
+      <input type="text" id="input-box" placeholder="Add your note">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="list-container">
+    </ul>
+  </div>
+  <footer>
+    <p>©️</p><img src="../images/td4.png" alt="To Do logo" class="footerLogo" />
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
