@@ -1,14 +1,16 @@
-:root{
+:root {
   --primary-color: #d6b3df;
   --secondery-color: ;
   --text-color: #1d1d1d;
-  
+
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -20,17 +22,24 @@
   margin: 1rem auto;
 }
 
+.navLogo {
+  height: 60px;
+}
+
+
 .profileLogo {
   height: 2.5rem;
   margin: 1rem;
 }
-/* Navbar */
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
+
 .calenderLogo {
   height: 60px;
 }
@@ -58,6 +67,7 @@ nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
+  border-radius: 20px;
 }
 
 /* Event section styling */
@@ -76,8 +86,17 @@ nav{
   padding: 10px 0;
 }
 
+h1 {
+  border-radius: 20px;
+}
+
+#event-section {
+  border-radius: 20px;
+  border: 0;
+}
+
 #event-section h3 {
-  color:var(--text-color);
+  color: var(--text-color);
   font-size: 18px;
   margin: 0;
 }
@@ -87,14 +106,16 @@ nav{
   margin: 10px 0;
   padding: 5px;
   width: 80%;
+  border-radius: 20px;
 }
 
 #event-section button {
-  background: var(--primary-color );
+  background: var(--primary-color);
   color: var(--text-color);
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .event-marker {
@@ -138,7 +159,8 @@ nav{
   padding: 10px;
   background: #f5f5f5;
   margin: 20px 0;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
 }
 
 #reminder-section h3 {
