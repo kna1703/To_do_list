@@ -78,26 +78,26 @@ input {
   max-width: 100vh;
   border-radius: 5vh;
   background-color: #EAE3E3;
+  padding: 5px;
 }
 
-.buttonSignup {
+#buttonSignup {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   border-radius: 5vh;
   margin-top: 9vh;
-
   height: 3vh;
   width: 25vh;
 }
 
 /* Mobile style */
-@media only screen and (min-width: 250px) and (max-width: 400px) {
+@media only screen and (min-width: 240px) and (max-width: 400px) {
   .blocSignup {
-    width: 80%;
-    max-width: 90%;
+    width: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 2em;
   }
 }
 
@@ -105,7 +105,7 @@ input {
 
 
 /* Tablette style */
-@media only screen and (min-width: 401px) and (max-width: 600px) {
+@media only screen and (min-width: 401px) and (max-width: 800px) {
   .blocSignup {
     width: 90%;
     max-width: 90%;
@@ -115,6 +115,12 @@ input {
 }
 
 /* Desktop style */
-@media only screen and (min-width: 601px) {
-  
+@media only screen and (min-width: 801px) {
+  .blocSignup {
+    max-width: 40%;
+  }
+  #buttonSignup {
+    padding-bottom: 15px;
+    padding-top: 2px;
+  }
 }
