@@ -1,4 +1,4 @@
-let events = [];
+let events = JSON.parse(localStorage.getItem('events')) || [];
  
 // letiables to store event input fields and reminder list
 let eventDateInput =
@@ -12,7 +12,14 @@ let reminderList =
  
 // Counter to generate unique event IDs
 let eventIdCounter = 1;
- 
+
+
+ // Function to save events data to local storage
+function saveEventsToLocalStorage() {
+  localStorage.setItem('events', JSON.stringify(events));
+}
+
+
 // Function to add events
 function addEvent() {
     let date = eventDateInput.value;
@@ -30,6 +37,7 @@ function addEvent() {
                 description: description
             }
         );
+        saveEventsToLocalStorage()
         showCalendar(currentMonth, currentYear);
         eventDateInput.value = "";
         eventTitleInput.value = "";
@@ -51,6 +59,7 @@ function deleteEvent(eventId) {
         showCalendar(currentMonth, currentYear);
         displayReminders();
     }
+    saveEventsToLocalStorage();
 }
  
 // Function to display reminders
@@ -102,7 +111,7 @@ currentYear = today.getFullYear();
 selectYear = document.getElementById("year");
 selectMonth = document.getElementById("month");
  
-createYear = generate_year_range(1970, 2050);
+createYear = generate_year_range(2024, 2080);
  
 document.getElementById("year").innerHTML = createYear;
  
