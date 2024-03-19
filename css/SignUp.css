@@ -31,12 +31,14 @@ body {
 }
 
 h4 {
-  padding: 2vh 0vh 2vh 0vh;
+  padding: 3vh 0vh 1vh 0vh;
+  font-size: 20px;
 }
 
 .mainSignUp,
 h2 {
   text-align: center;
+  padding: 2vh;
 }
 
 .blocSignup {
@@ -74,30 +76,35 @@ img {
 }
 
 input {
-  width: 96%;
+  width: 100%;
   max-width: 100vh;
   border-radius: 5vh;
   background-color: #EAE3E3;
+  height: 4.5vh;
+  border: none;
 }
 
-.buttonSignup {
+#buttonSignup {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   border-radius: 5vh;
-  margin-top: 9vh;
-
-  height: 3vh;
-  width: 25vh;
+  margin-top: 5vh;
+  height: 5vh;
+  width: 21vh;
+  border: none;
+  background-color: #d6b3df;
 }
 
 /* Mobile style */
-@media only screen and (min-width: 250px) and (max-width: 400px) {
+@media only screen and (min-width: 240px) and (max-width: 450px) {
   .blocSignup {
-    width: 80%;
-    max-width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2vh;
+    margin: 4vh;
   }
 }
 
@@ -105,14 +112,24 @@ input {
 
 
 /* Tablette style */
-@media only screen and (min-width: 401px) and (max-width: 600px) {
+@media only screen and (min-width: 450px) and (max-width: 800px) {
   .blocSignup {
-    width: 90%;
-    max-width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: auto;
+    max-width: 70%;
+    padding: 1vh;
   }
 }
 
 /* Desktop style */
-@media only screen and (min-width: 601px) {}
+@media only screen and (min-width: 801px) {
+  .blocSignup {
+    width: auto;
+    max-width: 40%;
+    padding: 1vh;
+  }
+
+  #buttonSignup {
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+}

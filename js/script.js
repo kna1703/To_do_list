@@ -28,14 +28,6 @@ listContainer.addEventListener("click", function (e) {
         saveData();
 
 
-        // else if (e.target.classList.contains("modify")) {
-        //     let newText = prompt("Enter new text:", e.target.parentElement.textContent.trim());
-        //     if (newText !== null) {
-        //         e.target.parentElement.textContent = newText;
-        //         saveData();
-        //     }
-
-
     } else if (e.target.classList.contains("modify")) {
         let taskText = e.target.parentElement.firstChild;
         let newText = prompt("Enter new text:", taskText.textContent.trim());
@@ -69,3 +61,4 @@ function showTask() {
 }
 
 showTask();
+
