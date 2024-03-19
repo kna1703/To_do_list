@@ -12,18 +12,22 @@
 /* header */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--primary-color);
 }
 
 .appLogo {
   height: 2rem;
-  margin: 1rem auto;
+  margin: 1rem;
 }
 
 .profileLogo {
   height: 2.5rem;
   margin: 1rem;
+}
+
+.profileLogo:hover {
+  transform: scale(1.1);
 }
 
 /* Navbar */
@@ -36,6 +40,10 @@ nav {
 
 .navLogo {
   height: 60px;
+}
+
+.navLogo:hover {
+  transform: scale(1.1);
 }
 
 
@@ -62,6 +70,12 @@ nav {
   background-color: #EAE3E3;
 }
 
+/* #input-box:hover {
+  background-color: #cec5ce;
+  border: solid;
+  border-color: var(--primary-color);
+} */
+
 
 input {
   flex: 1;
@@ -71,6 +85,8 @@ input {
   padding: 10px;
 }
 
+
+
 button {
   border: none;
   outline: none;
@@ -78,6 +94,10 @@ button {
   border-radius: 40px;
   background-color: #d6b3df;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 ul li {
