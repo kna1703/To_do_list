@@ -13,24 +13,26 @@
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--primary-color);
 }
 
 .appLogo {
   height: 2rem;
-  margin: 1rem auto;
+  margin: 1rem;
 }
-
-.navLogo {
-  height: 60px;
-}
-
 
 .profileLogo {
   height: 2.5rem;
   margin: 1rem;
 }
+
+.profileLogo:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 /* Navbar */
 nav {
@@ -40,13 +42,14 @@ nav {
   padding-bottom: 3em;
 }
 
-.calenderLogo {
+.navLogo {
   height: 60px;
 }
 
-.calenderLogo {
-  height: 60px;
+.navLogo:hover {
+  transform: scale(1.1);
 }
+
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
@@ -54,7 +57,7 @@ nav {
 .wrapper {
   max-width: 1100px;
   margin: 15px auto;
-  height: 75vh;
+  height: 100vh;
 }
 
 /* Calendar container */
@@ -200,6 +203,10 @@ h1 {
   padding: 5px 10px;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 /* Calendar table */
 .table-calendar {
   border-collapse: collapse;
@@ -299,4 +306,49 @@ footer {
 .footerLogo {
   height: 1rem;
   display: inline-block;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1200px) {
+
+  nav {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .navLogo {
+    height: 60px;
+  }
+
+  .container-calendar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .wrapper {
+    height: unset;
+  } */
+
+  #right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .navLogo {
+    height: 50px;
+  }
+
+  nav {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .container-calendar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .wrapper {
+    height: unset;
+  }
 }
