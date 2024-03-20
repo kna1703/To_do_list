@@ -89,6 +89,9 @@ input {
   padding: 10px;
 }
 
+.editInput {
+  width: 50%;
+}
 
 
 button {
@@ -110,6 +113,7 @@ ul li {
   padding-left: 40px;
   padding-right: 80px;
   user-select: none;
+  padding-right: 80px;
   cursor: pointer;
   position: relative;
   white-space: wrap;
@@ -144,24 +148,45 @@ ul li.checked::before {
   top: 5px;
   width: 30px;
   height: 30px;
-  font-size: 22px;
+
   text-align: center;
   border-radius: 50%;
 }
 
 .modify {
   right: 2em;
+  font-size: 22px;
 }
 
 .delete {
   right: 0;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .modify:hover,
-.delete:hover {
-  background: var(--primary-color);
+.delete:hover,
+.modify.disable:hover,
+.delete.disable:hover {
+  /* background: var(--primary-color);
+   */
+  transform: scale(1.4);
 }
 
+.modify.disable {
+  background-color: white;
+
+  pointer-events: none;
+}
+
+.modify.enabled {
+
+  cursor: pointer;
+}
+
+.modify.disable:active {
+  background-color: white;
+}
 
 /* Footer */
 
