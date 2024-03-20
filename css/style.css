@@ -87,9 +87,6 @@ ul li {
   user-select: none;
   cursor: pointer;
   position: relative;
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Hide overflowed content */
-  text-overflow: ellipsis;
 }
 
 ul li::before {
@@ -114,8 +111,10 @@ ul li.checked::before {
   background-image: url(../images/checked-5-32.png);
 }
 
-.delete, .modify{
+
+.delete {
   position: absolute;
+  right: 0;
   top: 5px;
   width: 30px;
   height: 30px;
@@ -123,14 +122,23 @@ ul li.checked::before {
   text-align: center;
   border-radius: 50%;
 }
-.modify {
-  right: 2em;
+
+.delete:hover {
+  background: var(--primary-color);
 }
 
-.delete {
-  right: 0;
+.modify {
+  position: absolute;
+  right: 2em;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
 }
-.modify:hover, .delete:hover {
+
+.modify:hover {
   background: var(--primary-color);
 }
 
@@ -152,12 +160,7 @@ footer {
   display: inline-block;
 }
 
-.deleted {
-  text-decoration: line-through; /* Add line-through style for deleted tasks */
-  color: #999; /* Change color to gray for deleted tasks */
-  opacity: 0.5; /* Reduce opacity for deleted tasks */
-  pointer-events: none; /* Disable pointer events for deleted tasks */
-}
+
 /* Responsive */
 
 @media screen and (min-width: 200px) and (max-width: 400px) {
