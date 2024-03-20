@@ -62,7 +62,7 @@ nav {
 
 .toDo {
   width: 100%;
-  max-width: auto;
+  /* max-width: auto; */
   background: white;
   /* margin: 100px auto 20px;*/
   border-radius: 10px;
@@ -91,6 +91,9 @@ input {
   padding: 10px;
 }
 
+.editInput {
+  width: 50%;
+}
 
 
 button {
@@ -111,13 +114,13 @@ ul li {
   padding: 10px;
   padding-left: 40px;
   user-select: none;
+  padding-right: 80px;
   cursor: pointer;
   position: relative;
-  white-space: nowrap;
-  /* Prevent text wrapping */
-  overflow: hidden;
-  /* Hide overflowed content */
-  text-overflow: ellipsis;
+  white-space: wrap; 
+  /* overflow: hidden; 
+  text-overflow: ellipsis; */
+  text-wrap: wrap; 
 }
 
 ul li::before {
@@ -148,24 +151,40 @@ ul li.checked::before {
   top: 5px;
   width: 30px;
   height: 30px;
-  font-size: 22px;
+  
   text-align: center;
   border-radius: 50%;
 }
 
 .modify {
   right: 2em;
+  font-size: 22px;
 }
 
 .delete {
   right: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.modify:hover, .delete:hover, .modify.disable:hover, .delete.disable:hover {
+  /* background: var(--primary-color);
+   */
+   transform: scale(1.4);
 }
 
-.modify:hover,
-.delete:hover {
-  background: var(--primary-color);
+ .modify.disable {
+  background-color: white; 
+  
+  pointer-events: none;
+}
+.modify.enabled {
+  
+  cursor: pointer;
 }
 
+.modify.disable:active {
+  background-color:white; 
+}
 
 /* Footer */
 
@@ -186,16 +205,12 @@ footer {
   display: inline-block;
 }
 
-.deleted {
+/* .deleted {
   text-decoration: line-through;
-  /* Add line-through style for deleted tasks */
   color: #999;
-  /* Change color to gray for deleted tasks */
   opacity: 0.5;
-  /* Reduce opacity for deleted tasks */
   pointer-events: none;
-  /* Disable pointer events for deleted tasks */
-}
+} */
 
 /* Responsive */
 
