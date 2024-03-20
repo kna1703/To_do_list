@@ -12,30 +12,42 @@
 /* header */
 .header {
   display: flex;
-  justify-content: center;
-  background-color: var(--primary-color);
+  justify-content: space-between;
+  background: linear-gradient(#FF847D);
+}
+
+body {
+  background: linear-gradient(#FF847D, #D65DB1);
 }
 
 .appLogo {
-  height: 2rem;
-  margin: 1rem auto;
+  height: 3rem;
+  margin: 2rem;
 }
 
 .profileLogo {
-  height: 2.5rem;
-  margin: 1rem;
+  height: 4rem;
+  margin: 2rem;
+}
+
+.profileLogo:hover {
+  transform: scale(1.1);
 }
 
 /* Navbar */
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  /* padding-top: 2em; */
+  padding-bottom: 2em;
 }
 
 .navLogo {
-  height: 60px;
+  height: 5rem;
+}
+
+.navLogo:hover {
+  transform: scale(1.1);
 }
 
 
@@ -43,7 +55,9 @@ nav {
 .mobileContainer {
   min-height: 100vh;
   background-color: white;
-  padding: 0 10em 0 10em;
+  margin: 0 5em 2em;
+  border-radius: 20px 20px 20px 20px;
+  padding: 3rem;
 }
 
 .toDo {
@@ -62,6 +76,12 @@ nav {
   background-color: #EAE3E3;
 }
 
+/* #input-box:hover {
+  background-color: #cec5ce;
+  border: solid;
+  border-color: var(--primary-color);
+} */
+
 
 input {
   flex: 1;
@@ -71,13 +91,19 @@ input {
   padding: 10px;
 }
 
+
+
 button {
   border: none;
   outline: none;
   padding: 10px 30px;
   border-radius: 40px;
-  background-color: #d6b3df;
+  background-color: #D65DB1;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 ul li {
@@ -87,6 +113,11 @@ ul li {
   user-select: none;
   cursor: pointer;
   position: relative;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  overflow: hidden;
+  /* Hide overflowed content */
+  text-overflow: ellipsis;
 }
 
 ul li::before {
@@ -111,34 +142,27 @@ ul li.checked::before {
   background-image: url(../images/checked-5-32.png);
 }
 
-
-.delete {
+.delete,
+.modify {
   position: absolute;
-  right: 0;
   top: 5px;
   width: 30px;
   height: 30px;
   font-size: 22px;
   text-align: center;
   border-radius: 50%;
-}
-
-.delete:hover {
-  background: var(--primary-color);
 }
 
 .modify {
-  position: absolute;
   right: 2em;
-  top: 5px;
-  width: 30px;
-  height: 30px;
-  font-size: 22px;
-  text-align: center;
-  border-radius: 50%;
 }
 
-.modify:hover {
+.delete {
+  right: 0;
+}
+
+.modify:hover,
+.delete:hover {
   background: var(--primary-color);
 }
 
@@ -146,7 +170,7 @@ ul li.checked::before {
 /* Footer */
 
 footer {
-  background-color: #d6b3df;
+  background: linear-gradient #D65DB1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -155,21 +179,47 @@ footer {
   padding: 8PX;
 }
 
+
+
 .footerLogo {
   height: 1rem;
   display: inline-block;
 }
 
+.deleted {
+  text-decoration: line-through;
+  /* Add line-through style for deleted tasks */
+  color: #999;
+  /* Change color to gray for deleted tasks */
+  opacity: 0.5;
+  /* Reduce opacity for deleted tasks */
+  pointer-events: none;
+  /* Disable pointer events for deleted tasks */
+}
 
 /* Responsive */
 
 @media screen and (min-width: 200px) and (max-width: 400px) {
+
+
+  .profileLogo {
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  .appLogo {
+    height: 2rem;
+    margin: 1rem;
+  }
+
   .mobileContainer {
-    padding: 0;
+    margin: 0 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    min-height: 80vh;
   }
 
   nav {
-    padding-top: 1.5em;
+    padding-top: 1em;
     padding-bottom: 1.5em;
   }
 
@@ -179,8 +229,11 @@ footer {
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
+
   .mobileContainer {
-    padding: 0 0.5em 0 0.5em;
+    margin: 0 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    min-height: 80vh;
   }
 
   .navLogo {
@@ -188,18 +241,45 @@ footer {
   }
 
   nav {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+  }
+
+  .profileLogo {
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  .appLogo {
+    height: 2rem;
+    margin: 1rem;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 991px) {
+
   .mobileContainer {
-    padding: 0 2em 0 2em;
+    margin: 0 2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .profileLogo {
+    height: 3rem;
+    margin: 1rem;
+  }
+
+  .appLogo {
+    height: 2.5rem;
+    margin: 1rem;
   }
 
   .navLogo {
     height: 60px;
+  }
+
+  nav {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
   }
 
 }
