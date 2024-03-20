@@ -14,25 +14,33 @@
 
     <main>
       <div class="blocSignup">
-        <h2>Sign Up</h2>
-        <form class="SignUp">
-          <h4>UserName*</h4>
-          <span class="UserName">
-            <input type="text" name="UserName" required />
-          </span>
-          <h4>Email*</h4>
-          <span class="EnterEmail">
-            <input type="email" name="email" required />
-          </span>
-          <h4>Password*</h4>
-          <span class="Password">
-            <input type="password" name="Password" required
-          /></span>
-          <h4>Confirm Password*</h4>
-          <span class="ConfirmPassword">
-            <input type="password" name="ConfirmPassword" required />
-          </span>
-          <button id="buttonSignup">Create Account</button>
+        <form id="form" action="/">
+          <h2>Sign Up</h2>
+          <div class="input-control">
+            <label for="username">UserName*</label>
+            <input id="username" name="username" type="text" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="text" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="password">Password*</label>
+            <input id="password" name="password" type="password" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="password2">Confirm Password*</label>
+            <input id="password2" name="password2" type="password" />
+            <div class="error"></div>
+          </div>
+
+          <button id="signupbut" type="submit">Create Account</button>
         </form>
       </div>
     </main>

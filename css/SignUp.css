@@ -7,7 +7,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0.5vh 0.5vh 0.5vh 0.5vh; */
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ header {
 }
 
 .LogoHeader {
-  width: auto;
+  width: 30vh;
 }
 
 body {
@@ -38,7 +38,7 @@ h4 {
 .mainSignUp,
 h2 {
   text-align: center;
-  padding: 2vh;
+  /* padding: 2vh; */
 }
 
 .blocSignup {
@@ -75,16 +75,42 @@ img {
   height: 8vh;
 }
 
-input {
-  width: 100%;
-  max-width: 100vh;
-  border-radius: 5vh;
-  background-color: #EAE3E3;
-  height: 4.5vh;
-  border: none;
+.input-control {
+  display: flex;
+  flex-direction: column;
 }
 
-#buttonSignup {
+.input-control input {
+  border: 0.5vh solid #DFDFDF;
+  display: block;
+  padding: 1.5vh;
+  width: 100%;
+  background-color: #DFDFDF;
+  border-radius: 4vh;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: green;
+}
+
+.input-control.error input {
+  border-color: red;
+}
+
+.input-control .error {
+  color: red;
+  height: 3vh;
+  font-size: 1.5vh;
+}
+
+
+
+
+#signupbut {
   display: flex;
   justify-content: center;
   align-items: center;
