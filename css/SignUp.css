@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--main-color);
-  margin: 4vh;
+  margin: 5vh;
 }
 
 .LogoHeader {
@@ -35,8 +35,14 @@ h4 {
   font-size: 20px;
 }
 
-.mainSignUp,
 h2 {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 1vh 2vh 1vh;
+}
+
+.mainSignUp,
+.signup {
   text-align: center;
   /* padding: 2vh; */
 }
@@ -72,7 +78,7 @@ footer {
 }
 
 img {
-  height: 8vh;
+  height: 6vh;
 }
 
 .input-control {
@@ -133,9 +139,6 @@ img {
     margin: 4vh;
   }
 }
-
-
-
 
 /* Tablette style */
 @media only screen and (min-width: 450px) and (max-width: 800px) {

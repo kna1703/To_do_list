@@ -1,0 +1,190 @@
+:root {
+    --main-color: #d6b3df;
+    --second-color: #E1E1E1;
+    --headertitle: #DFCBCB;
+    --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin: 5vh;
+}
+
+.logoHeader {
+    height: 6vh;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;
+    height: 80vh; */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh;
+    width: 95%;
+    max-width: 70vh;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mainlogin {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 0px 10px 0px;
+}
+
+.bloclogin {
+    padding: 16px 25px 16px 25px;
+    width: 95%;
+    max-width: 70vh;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.email, .password {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+
+
+input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #EAE3E3;
+}
+
+.forgotpassword {
+    text-align: center;
+}
+
+.buttonlogin {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    width:15vh;
+    height: 4vh;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.buttonlogin:hover {
+    transform: scale(1.1);
+    background-color: var(--main-color);
+}
+
+.forgotpassword {
+    padding: 1vh;
+}
+
+.continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apple,
+.google,
+.facebook {
+    color: white;
+    display: inline;
+    margin: 1vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #D4D4D4;
+    width: 80%;
+    max-width: 90%;
+    border: none;
+    padding: 8px;
+}
+
+.apple {
+    background-color: black;
+    font-size: 15px;
+}
+
+.google {
+    background-color: #4185F5;
+    font-size: 15px;
+}
+
+.facebook {
+    background-color: #3C5A95;
+    font-size: 15px;
+}
+
+.signup {
+   margin-top: 2vh;
+   margin-bottom: 1vh;
+}
+
+footer {
+    margin: 0;
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    text-align: center;
+  }
+
+.footerLogo {
+    height: 2vh;
+    display: inline-block;
+  }
+
+
+/* Mobile style */
+@media only screen and (min-width: 240px) and (max-width: 400px) {
+.bloclogin {
+    width: auto;
+    max-width: 80%;
+    padding: 2em;
+}
+  }
+  
+  /* Tablette style */
+  @media only screen and (min-width: 401px) and (max-width: 800px) {
+.bloclogin {
+    width: auto;
+    max-width: 70%;
+    padding: 2em;
+}
+  }
+  
+  /* Desktop style */
+  @media only screen and (min-width: 801px) {
+.bloclogin {
+    width: auto;
+    max-width: 80%;
+    padding: 2em;
+    }
+
+.buttonlogin {
+    padding-bottom: 15px;
+    padding-top: 2px;
+}
+  }

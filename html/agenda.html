@@ -14,44 +14,18 @@
   <header>
     <div class="header">
       <img src="../images/td4.png" alt="To Do logo" class="appLogo" />
-      <img src="../images/profile.png" alt="profileLogo" class="profileLogo" />
+      <a href="../html/login.html"><img src="../images/profile.png" alt="profileLogo" class="profileLogo" /></a>
     </div>
   </header>
 
   <nav class="navbar">
     <div><a href="../html/index.html"><img src="../images/home.png" alt="homeLogo" class="navLogo" /></a></div>
     <div><a href="../html/agenda.html"><img src="../images/calender.png" alt="calenderLogo" class="navLogo" /></a></div>
-    <div><a href="../html/history.html"><img src="../images/history.png" alt="historyLogo" class="navLogo" /></a></div>
   </nav>
 
   <!-- Main wrapper for the calendar application -->
   <div class="wrapper">
     <div class="container-calendar">
-      <div id="left">
-        <h1>Dynamic Calendar</h1>
-        <div id="event-section">
-          <h3>Add Event</h3>
-          <input type="date" id="eventDate">
-          <input type="text" id="eventTitle" placeholder="Event Title">
-          <input type="text" id="eventDescription" placeholder="Event Description">
-          <button id="addEvent" onclick="addEvent()">
-            Add
-          </button>
-        </div>
-        <div id="reminder-section">
-          <h3>Reminders</h3>
-          <!-- List to display reminders -->
-          <ul id="reminderList">
-            <li data-event-id="1">
-              <strong>Event Title</strong>
-              - Event Description on Event Date
-              <button class="delete-event" onclick="deleteEvent(1)">
-                Delete
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div id="right">
         <h3 id="monthAndYear">.</h3>
         <div class="button-container-calendar">
@@ -86,6 +60,31 @@
           </select>
           <!-- Dropdown to select a specific year -->
           <select id="year" onchange="jump()"></select>
+        </div>
+      </div>
+      <div id="left">
+        <h1>Agenda</h1>
+        <div id="event-section">
+          <h3>Add Event</h3>
+          <input type="date" id="eventDate">
+          <input type="text" id="eventTitle" placeholder="Event Title">
+          <input type="text" id="eventDescription" placeholder="Event Description">
+          <button id="addEvent" onclick="addEvent()">
+            Add
+          </button>
+        </div>
+        <div id="reminder-section">
+          <h3>Reminders</h3>
+          <!-- List to display reminders -->
+          <ul id="reminderList">
+            <li data-event-id="1">
+              <strong>Event Title</strong>
+              - Event Description on Event Date
+              <button class="delete-event" onclick="deleteEvent(1)">
+                Delete
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

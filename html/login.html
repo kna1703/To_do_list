@@ -3,56 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login_style.css">
-    <title>Login</title>
+    <meta name="Login - Tout Doux" content="Lister vos tâches du quotidien grâce à Tout Doux, écrire, modifier, supprimer, cocher, planifier vos tâches - Login">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login - Tout Doux - Lister vos tâches du quotidien</title>
     <link rel="icon" type="image/x-icon" href="../images/check-lg.svg">
 </head>
 
 <body>
     <header>
-        <img src="../images/td4.png" />
+        <img src="../images/td4.png" class="logoHeader" alt="logo" onclick="javascript:window.location.href = '../html/index.html'" />
     </header>
 
     <main class="mainpage">
         <div class="bloclogin">
-            <h2 class="mainlogin">Login</h2>
+            <p class="mainlogin">Login</p>
             <section class="login">
-                <label>
-                    <h3>Email</h3>
-                </label>
+                <label class="email">Email*</label>
                 <span class="enteremail">
-                    <input type="text" name="email" required>
+                    <input type="text" name="email" required class="adressmail">
                 </span>
-                <label>
-                    <h3>Password</h3>
+                <label class="password">Password*
                 </label>
                 <span class="enterpassword">
-                    <input type="password" name="password" required>
+                    <input type="password" name="password" required class="passwordinput">
                 </span>
                 <button class="buttonlogin">Login</button>
-                <a href=""><h5>Forgot password?</h5></a>
+                <a href="../html/forgotpassword.html"><p class="forgotpassword">Forgot password?</p></a>
             </section>
 
             <section class="continue">
-                <button class="apple">
-                    <h4>Continue with Apple</h4>
+                <button class="apple" onclick="window.location.href='https://appleid.apple.com/';" alt="login via Apple"> Continue with Apple</button>
+                <button class="google" onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=ARZ0qKKutQNP8tXNXtewE_bLpa76Niot2sN7unDv9ABRgVbQneQie6Ge2t1PB-1Dy-zVS2l_eKUQOQ&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1409654853%3A1710925020638546&theme=mn&ddm=0';" alt="login via Google">Continue with Google</button>
+                <button class="facebook" onclick="window.location.href='https://www.facebook.com/';" alt="login via Facebook">Continue with Facebook
                 </button>
-                <button class="google">
-                    <h4>Continue with Google</h4>
-                </button>
-                <button class="facebook">
-                    <h4>Continue with Facebook</h4>
-                </button>
-                <h6>First time ? <a href="../html/SignUp.html"> Sign up</a></h6>
+                <p class="signup">First time ? <a href="../html/SignUp.html"> Sign up</a></p>
             </section>
         </div>
     </main>
 
     <footer>
-        <h6>© Tout doux 2024</h6>
+        <p>
+            ©️ <img src="../images/td4.png" alt="Tout Doux logo" class="footerLogo" />
+        </p>
     </footer>
 
+<script src="../js/login.js"></script>
 
 </body>
 
