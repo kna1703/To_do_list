@@ -7,7 +7,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0.5vh 0.5vh 0.5vh 0.5vh; */
   box-sizing: border-box;
 }
 
@@ -18,8 +18,8 @@ header {
   margin: 5vh;
 }
 
-.logoHeader {
-  width: auto;
+.LogoHeader {
+  width: 30vh;
 }
 
 body {
@@ -31,11 +31,20 @@ body {
 }
 
 h4 {
-  padding: 2vh 0vh 2vh 0vh;
+  padding: 3vh 0vh 1vh 0vh;
+  font-size: 20px;
 }
 
-.mainSignUp, .signup {
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 1vh 2vh 1vh;
+}
+
+.mainSignUp,
+.signup {
   text-align: center;
+  /* padding: 2vh; */
 }
 
 .blocSignup {
@@ -72,51 +81,84 @@ img {
   height: 6vh;
 }
 
-input {
-  width: 96%;
-  max-width: 100vh;
-  border-radius: 5vh;
-  background-color: #EAE3E3;
-  padding: 5px;
+.input-control {
+  display: flex;
+  flex-direction: column;
 }
 
-#buttonSignup {
+.input-control input {
+  border: 0.5vh solid #DFDFDF;
+  display: block;
+  padding: 1.5vh;
+  width: 100%;
+  background-color: #DFDFDF;
+  border-radius: 4vh;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: green;
+}
+
+.input-control.error input {
+  border-color: red;
+}
+
+.input-control .error {
+  color: red;
+  height: 3vh;
+  font-size: 1.5vh;
+}
+
+
+
+
+#signupbut {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   border-radius: 5vh;
-  margin-top: 9vh;
-  height: 3vh;
-  width: 25vh;
+  margin-top: 5vh;
+  height: 5vh;
+  width: 21vh;
+  border: none;
+  background-color: #d6b3df;
 }
 
 /* Mobile style */
-@media only screen and (min-width: 240px) and (max-width: 400px) {
+@media only screen and (min-width: 240px) and (max-width: 450px) {
   .blocSignup {
     width: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 2em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2vh;
+    margin: 4vh;
   }
 }
 
 /* Tablette style */
-@media only screen and (min-width: 401px) and (max-width: 800px) {
+@media only screen and (min-width: 450px) and (max-width: 800px) {
   .blocSignup {
-    width: 90%;
-    max-width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: auto;
+    max-width: 70%;
+    padding: 1vh;
   }
 }
 
 /* Desktop style */
 @media only screen and (min-width: 801px) {
   .blocSignup {
+    width: auto;
     max-width: 40%;
+    padding: 1vh;
   }
+
   #buttonSignup {
-    padding-bottom: 15px;
-    padding-top: 2px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
   }
 }
