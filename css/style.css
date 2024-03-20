@@ -1,6 +1,7 @@
 :root {
-  --primary-color: #d6b3df;
-  --secondery-color: ;
+  --primary-color: #FF847D;
+  --secondary-color: #D65DB1;
+  --text-color: 1d1d1d;
 }
 
 * {
@@ -9,15 +10,19 @@
   box-sizing: border-box;
 }
 
-/* header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(#FF847D);
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   background: linear-gradient(#FF847D, #D65DB1);
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .appLogo {
@@ -38,7 +43,6 @@ body {
 nav {
   display: flex;
   justify-content: space-evenly;
-  /* padding-top: 2em; */
   padding-bottom: 2em;
 }
 
@@ -53,21 +57,21 @@ nav {
 
 /* body */
 .mobileContainer {
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: white;
-  margin: 0 5em 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 5rem 5rem;
   border-radius: 20px 20px 20px 20px;
   padding: 3rem;
 }
 
 .toDo {
-  width: 100%;
+  /* width: 100%; */
   /* max-width: auto; */
-  background: white;
-  /* margin: 100px auto 20px;*/
-  border-radius: 10px;
+  /* background: white; */
+  /* border-radius: 10px; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   border-radius: 10px;
 }
@@ -76,17 +80,11 @@ nav {
   background-color: #EAE3E3;
 }
 
-/* #input-box:hover {
-  background-color: #cec5ce;
-  border: solid;
-  border-color: var(--primary-color);
-} */
-
 
 input {
   flex: 1;
   border: none;
-  outline: none;
+  /* outline: none; */
   border-radius: 40px;
   padding: 10px;
 }
@@ -98,10 +96,10 @@ input {
 
 button {
   border: none;
-  outline: none;
+  /* outline: none; */
   padding: 10px 30px;
   border-radius: 40px;
-  background-color: #D65DB1;
+  background-color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -113,14 +111,13 @@ ul li {
   list-style: none;
   padding: 10px;
   padding-left: 40px;
+  padding-right: 80px;
   user-select: none;
   padding-right: 80px;
   cursor: pointer;
   position: relative;
-  white-space: wrap; 
-  /* overflow: hidden; 
-  text-overflow: ellipsis; */
-  text-wrap: wrap; 
+  white-space: wrap;
+  text-wrap: wrap;
 }
 
 ul li::before {
@@ -151,7 +148,7 @@ ul li.checked::before {
   top: 5px;
   width: 30px;
   height: 30px;
-  
+
   text-align: center;
   border-radius: 50%;
 }
@@ -166,51 +163,49 @@ ul li.checked::before {
   font-size: 30px;
   font-weight: bold;
 }
-.modify:hover, .delete:hover, .modify.disable:hover, .delete.disable:hover {
+
+.modify:hover,
+.delete:hover,
+.modify.disable:hover,
+.delete.disable:hover {
   /* background: var(--primary-color);
    */
-   transform: scale(1.4);
+  transform: scale(1.4);
 }
 
- .modify.disable {
-  background-color: white; 
-  
+.modify.disable {
+  background-color: white;
+
   pointer-events: none;
 }
+
 .modify.enabled {
-  
+
   cursor: pointer;
 }
 
 .modify.disable:active {
-  background-color:white; 
+  background-color: white;
 }
 
 /* Footer */
 
 footer {
-  background: linear-gradient #D65DB1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 8PX;
+  /* text-align: center; */
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
-
 
 .footerLogo {
   height: 1rem;
   display: inline-block;
 }
-
-/* .deleted {
-  text-decoration: line-through;
-  color: #999;
-  opacity: 0.5;
-  pointer-events: none;
-} */
 
 /* Responsive */
 
@@ -229,13 +224,11 @@ footer {
 
   .mobileContainer {
     margin: 0 0.5rem;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-    min-height: 80vh;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
 
   nav {
     padding-top: 1em;
-    padding-bottom: 1.5em;
   }
 
   .navLogo {
@@ -246,9 +239,8 @@ footer {
 @media screen and (min-width: 401px) and (max-width: 600px) {
 
   .mobileContainer {
-    margin: 0 0.5rem;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-    min-height: 80vh;
+    margin: 0 2rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
 
   .navLogo {
@@ -257,25 +249,6 @@ footer {
 
   nav {
     padding-top: 1em;
-    padding-bottom: 1.5em;
-  }
-
-  .profileLogo {
-    height: 2.5rem;
-    margin: 1rem;
-  }
-
-  .appLogo {
-    height: 2rem;
-    margin: 1rem;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 991px) {
-
-  .mobileContainer {
-    margin: 0 2rem;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
   }
 
   .profileLogo {
@@ -284,17 +257,17 @@ footer {
   }
 
   .appLogo {
-    height: 2.5rem;
+    height: 3rem;
     margin: 1rem;
   }
+}
 
-  .navLogo {
-    height: 60px;
+@media screen and (min-width: 601px) and (max-width: 680px) {
+
+  .mobileContainer {
+    margin: 0 4rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
 
-  nav {
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-  }
 
 }

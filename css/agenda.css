@@ -1,9 +1,15 @@
 :root {
-  --primary-color: #d6b3df;
-  --secondery-color: ;
+  --primary-color: #FF847D;
+  --secondary-color: #D65DB1;
   --text-color: #1d1d1d;
 
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 
 * {
   margin: 0;
@@ -11,20 +17,26 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(#FF847D, #D65DB1);
+}
+
+/* header */
+
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
 }
 
+
 .appLogo {
-  height: 2rem;
-  margin: 1rem;
+  height: 3rem;
+  margin: 2rem;
 }
 
 .profileLogo {
-  height: 2.5rem;
-  margin: 1rem;
+  height: 4rem;
+  margin: 2rem;
 }
 
 .profileLogo:hover {
@@ -38,12 +50,11 @@
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 .navLogo {
-  height: 60px;
+  height: 5rem;
 }
 
 .navLogo:hover {
@@ -55,9 +66,9 @@ nav {
 
 
 .wrapper {
-  max-width: 1100px;
-  margin: 15px auto;
-  height: 100vh;
+  /* max-width: 1100px; */
+  margin-bottom: 5rem;
+  /* height: 50vh; */
 }
 
 /* Calendar container */
@@ -113,7 +124,7 @@ h1 {
 }
 
 #event-section button {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--text-color);
   border: none;
   padding: 5px 10px;
@@ -184,33 +195,34 @@ h1 {
 
 /* Style for the delete buttons */
 .delete-event {
-  background: rgb(237, 19, 19);
-  color: white;
+  background: var(--secondary-color);
+  color: var(--text-color);
   border: none;
   padding: 5px 10px;
   cursor: pointer;
   margin-left: 10px;
   align-items: right;
+  border-radius: 20px;
 }
 
 /* Buttons in the calendar */
 .button-container-calendar button {
   cursor: pointer;
-  background: var(--primary-color);
-  color: #fff;
-  border: 1px solid var(--secondery-color);
-  border-radius: 4px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
   padding: 5px 10px;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 /* Calendar table */
 .table-calendar {
   border-collapse: collapse;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .table-calendar td,
@@ -245,7 +257,7 @@ button:hover {
 
 /* Hover effect for date cells */
 .date-picker:hover {
-  background-color: var(--secondery-color);
+  background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
 }
@@ -294,13 +306,15 @@ button:hover {
 
 
 footer {
-  background-color: var(--primary-color);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 8PX;
+  /* text-align: center; */
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footerLogo {
@@ -308,39 +322,25 @@ footer {
   display: inline-block;
 }
 
-@media screen and (min-width: 401px) and (max-width: 1200px) {
-
-  nav {
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-
-  .navLogo {
-    height: 60px;
-  }
-
-  .container-calendar {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* .wrapper {
-    height: unset;
-  } */
-
-  #right {
-    width: 100%;
-  }
-}
 
 @media screen and (min-width: 200px) and (max-width: 400px) {
+
+  .profileLogo {
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  .appLogo {
+    height: 2rem;
+    margin: 1rem;
+  }
+
   .navLogo {
     height: 50px;
   }
 
   nav {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 1em;
   }
 
   .container-calendar {
@@ -348,7 +348,42 @@ footer {
     justify-content: center;
   }
 
-  .wrapper {
-    height: unset;
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+  .container-calendar {
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .navLogo {
+    height: 50px;
+  }
+
+  nav {
+    padding-top: 1em;
+  }
+
+  .profileLogo {
+    height: 3rem;
+    margin: 1rem;
+  }
+
+  .appLogo {
+    height: 3rem;
+    margin: 1rem;
+  }
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 680px) {
+
+  .container-calendar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
 }
