@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="../images/check-lg.svg">
+</head>
+
+<body>
+    <header>
+        <img src="../images/td4.png" class="logoHeader" alt="logo" onclick="javascript:window.location.href = '../html/index.html'" />
+    </header>
+
+    <main class="mainpage">
+        <div class="bloclogin">
+            <p class="mainlogin">Login</p>
+            <section class="login">
+                <label class="email">Email*</label>
+                <span class="enteremail">
+                    <input type="text" name="email" required class="adressmail">
+                </span>
+                <label class="password">Password*
+                </label>
+                <span class="enterpassword">
+                    <input type="password" name="password" required class="passwordinput">
+                </span>
+                <button class="buttonlogin">Login</button>
+                <a href="../html/forgotpassword.html"><p class="forgotpassword">Forgot password?</p></a>
+            </section>
+
+            <section class="continue">
+                <button class="apple" onclick="window.location.href='https://appleid.apple.com/';"> Continue with Apple</button>
+                <button class="google" onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=ARZ0qKKutQNP8tXNXtewE_bLpa76Niot2sN7unDv9ABRgVbQneQie6Ge2t1PB-1Dy-zVS2l_eKUQOQ&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1409654853%3A1710925020638546&theme=mn&ddm=0';">Continue with Google</button>
+                <button class="facebook" onclick="window.location.href='https://www.facebook.com/';">Continue with Facebook
+                </button>
+                <p class="signup">First time ? <a href="../html/SignUp.html"> Sign up</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ©️ <img src="../images/td4.png" alt="To Do logo" class="footerLogo" />
+        </p>
+    </footer>
+
+<script src="../js/login.js"></script>
+
+</body>
+
+</html>
