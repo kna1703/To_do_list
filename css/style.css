@@ -114,6 +114,7 @@ ul li {
   padding: 10px;
   padding-left: 40px;
   user-select: none;
+  padding-right: 80px;
   cursor: pointer;
   position: relative;
   white-space: wrap; 
@@ -204,16 +205,12 @@ footer {
   display: inline-block;
 }
 
-.deleted {
+/* .deleted {
   text-decoration: line-through;
-  /* Add line-through style for deleted tasks */
   color: #999;
-  /* Change color to gray for deleted tasks */
   opacity: 0.5;
-  /* Reduce opacity for deleted tasks */
   pointer-events: none;
-  /* Disable pointer events for deleted tasks */
-}
+} */
 
 /* Responsive */
 
