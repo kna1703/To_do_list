@@ -15,10 +15,10 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--main-color);
-  margin: 4vh;
+  margin: 5vh;
 }
 
-.LogoHeader {
+.logoHeader {
   width: auto;
 }
 
@@ -34,8 +34,7 @@ h4 {
   padding: 2vh 0vh 2vh 0vh;
 }
 
-.mainSignUp,
-h2 {
+.mainSignUp, .signup {
   text-align: center;
 }
 
@@ -70,7 +69,7 @@ footer {
 }
 
 img {
-  height: 8vh;
+  height: 6vh;
 }
 
 input {
@@ -100,9 +99,6 @@ input {
     padding: 2em;
   }
 }
-
-
-
 
 /* Tablette style */
 @media only screen and (min-width: 401px) and (max-width: 800px) {
