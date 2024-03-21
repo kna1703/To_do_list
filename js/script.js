@@ -19,7 +19,6 @@ function addTask() {
 
         // Add event listener to the "modify" button
         modify.addEventListener("click", function () {
-        // Add the "disable" class to the "modify" button
          modify.classList.add("disable");
 
     // Create input field and save button
