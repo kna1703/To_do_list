@@ -1,5 +1,9 @@
 :root {
   --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --footer-color: #f5f0ea;
+  --primary-color: #FF847D;
+  --secondary-color: #D65DB1;
+  --block-color: #f7f5f2;
 } 
 
 * {
@@ -21,10 +25,14 @@ header {
 }
 
 .LogoHeader {
-    height: 6vh;
-    display: block;
-    margin: 0 auto;
+  height: 6vh;
+  display: block;
+  margin: 0 auto;
   -webkit-filter: drop-shadow(5px 5px 5px #515151);
+}
+
+.LogoHeader:hover {
+  transform: scale(1.1);
 }
 
 body {
@@ -35,10 +43,7 @@ body {
   height: 80vh;
 }
 
-h4 {
-  padding: 3vh 0vh 1vh 0vh;
-  font-size: 20px;
-}
+
 
 h2 {
   display: flex;
@@ -57,8 +62,8 @@ h2 {
   width: 50%;
   max-width: 500vh;
   margin: 0 auto;
-  background: white;
-  border-radius: 5vh;
+  background: var(--block-color);
+  border-radius: 10px;
   height: 73vh;
 }
 
@@ -69,19 +74,27 @@ h2 {
 }
 
 footer {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 1rem;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  background: linear-gradient #D65DB1;
-  text-align: center;
-  padding: 2vh;
 }
 
 .footerLogo {
   height: 2vh;
   display: inline-block;
   -webkit-filter: drop-shadow(2px 2px 2px #515151);
+}
+
+
+footer > p {
+  color: var(--footer-color);
+  padding-right: 0.5rem;
 }
 
 img {
@@ -133,26 +146,32 @@ img {
   height: 5vh;
   width: 21vh;
   border: none;
-  background-color: #d6b3df;
+  background-color: var(--secondary-color);
 }
 
 /* Mobile style */
-@media only screen and (min-width: 240px) and (max-width: 450px) {
+@media only screen and (min-width: 280px) and (max-width: 450px) {
   .blocSignup {
-    width: auto;
+    width: 90%;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 2vh;
-    margin: 4vh;
+    padding: 2vh 2vh 2vh 2vh;
+  }
+
+  #signupbut {
+    margin-top: 2vh;
   }
 }
 
 /* Tablette style */
 @media only screen and (min-width: 450px) and (max-width: 800px) {
   .blocSignup {
-    width: auto;
-    max-width: 70%;
-    padding: 1vh;
+    width: 90%;
+    padding: 2vh 2vh 2vh 2vh;
+  }
+
+  #signupbut {
+    margin-top: 2vh;
   }
 }
 
@@ -160,12 +179,12 @@ img {
 @media only screen and (min-width: 801px) {
   .blocSignup {
     width: auto;
-    max-width: 40%;
-    padding: 1vh;
+    max-width: 30%;
+    padding: 2vh 2vh 2vh 2vh;
   }
 
-  #buttonSignup {
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+  #signupbut {
+    width: auto;
+    margin-top: 2vh;
   }
 }

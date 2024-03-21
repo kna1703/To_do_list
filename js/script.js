@@ -49,6 +49,7 @@ listContainer.addEventListener("click", function (e) {
 
         // Create save button
         let saveButton = document.createElement("button");
+        saveButton.classList.add("save");
         saveButton.textContent = "Save";
 
         // Replace task text with input field and save button

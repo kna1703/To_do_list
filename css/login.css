@@ -1,5 +1,9 @@
 :root {
     --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --footer-color: #f5f0ea;
+    --primary-color: #FF847D;
+    --secondary-color: #D65DB1;
+    --block-color: #f7f5f2;
 }
 
 * {
@@ -13,7 +17,7 @@ html {
     min-height: 100%;
 }
 
-header, footer {
+header {
     display: flex;
     justify-content: center;
     background: linear-gradient #D65DB1;
@@ -25,6 +29,10 @@ header, footer {
     display: block;
     margin: 0 auto;
     -webkit-filter: drop-shadow(5px 5px 5px #515151);
+}
+
+.logoHeader:hover {
+    transform: scale(1.1);
 }
 
 body {
@@ -76,6 +84,7 @@ input {
     height: 5vh;
     border-radius: 10px;
     background-color: #EAE3E3;
+    border: none;
 }
 
 .forgotpassword {
@@ -83,8 +92,10 @@ input {
 }
 
 .buttonlogin {
+    border: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     border-radius: 10px;
     width:15vh;
@@ -92,11 +103,11 @@ input {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
+    background-color: var(--secondary-color);
 }
 
 .buttonlogin:hover {
     transform: scale(1.1);
-    background-color: var(--main-color);
 }
 
 .forgotpassword {
@@ -129,9 +140,17 @@ input {
     font-size: 15px;
 }
 
+.apple:hover {
+    transform: scale(1.1);
+}
+
 .google {
     background-color: #4185F5;
     font-size: 15px;
+}
+
+.google:hover {
+    transform: scale(1.1);
 }
 
 .facebook {
@@ -139,26 +158,36 @@ input {
     font-size: 15px;
 }
 
+.facebook:hover{
+    transform: scale(1.1);
+}
+
 .signup {
    margin-top: 2vh;
    margin-bottom: 1vh;
 }
 
-footer {
-    margin: 0;
-    position: absolute;
+  footer {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding: 1rem;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    background: linear-gradient #D65DB1;
-    text-align: center;
-    padding: 2vh;
   }
-
-.footerLogo {
+  
+  .footerLogo {
     height: 2vh;
     display: inline-block;
     -webkit-filter: drop-shadow(2px 2px 2px #515151);
+  }
+
+  footer > p {
+    color: var(--footer-color);
+    padding-right: 0.5rem;
   }
 
 /* Mobile style */
@@ -166,7 +195,7 @@ footer {
 .bloclogin {
     width: auto;
     max-width: 80%;
-    padding: 2em;
+
 }
   }
   
@@ -175,7 +204,7 @@ footer {
 .bloclogin {
     width: auto;
     max-width: 70%;
-    padding: 2em;
+
 }
   }
   
@@ -184,11 +213,7 @@ footer {
 .bloclogin {
     width: auto;
     max-width: 80%;
-    padding: 2em;
+
     }
 
-.buttonlogin {
-    padding-bottom: 15px;
-    padding-top: 2px;
-}
   }
