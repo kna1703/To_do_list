@@ -94,6 +94,7 @@ nav {
 
 #input-box {
   background-color: #EAE3E3;
+  margin-bottom: 1rem;
 }
 
 
@@ -117,6 +118,7 @@ button {
   border-radius: 40px;
   background-color: var(--secondary-color);
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 button:hover {
