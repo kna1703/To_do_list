@@ -46,14 +46,14 @@ body {
   -webkit-filter: drop-shadow(5px 5px 5px #515151);
 }
 
-.appLogo:hover{
-    transform: scale(1.1);
+.appLogo:hover {
+  transform: scale(1.1);
 }
 
 .profileLogo {
   height: 4rem;
   margin: 2rem;
-  -webkit-filter: drop-shadow(3px 3px 3px  #945259);
+  -webkit-filter: drop-shadow(3px 3px 3px #945259);
 }
 
 .profileLogo:hover {
@@ -88,12 +88,7 @@ nav {
 }
 
 .toDo {
-  /* width: 100%; */
-  /* max-width: auto; */
-  /* background: white; */
-  /* border-radius: 10px; */
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   border-radius: 10px;
 }
@@ -110,10 +105,11 @@ input {
   outline: none;
   border-radius: 40px;
   padding: 10px;
+  background-color: #EAE3E3;
 }
 
 .editInput {
-  width: 50%;
+  width: 80%;
 }
 
 
@@ -198,7 +194,7 @@ ul li.checked::before {
 }
 
 .modify.disable {
-  background-color: white;
+  background-color: transparent;
 
   pointer-events: none;
 }
@@ -209,7 +205,7 @@ ul li.checked::before {
 }
 
 .modify.disable:active {
-  background-color: white;
+  background-color: transparent;
 }
 
 .save {
@@ -235,7 +231,7 @@ footer {
   width: 100%;
 }
 
-footer > p {
+footer>p {
   color: white;
   padding-right: 0.5rem;
 }
@@ -245,9 +241,8 @@ footer > p {
   display: inline-block;
   -webkit-filter: drop-shadow(2px 2px 2px #515151);
 }
-footer>p {
-  
-}
+
+footer>p {}
 
 /* Responsive */
 
