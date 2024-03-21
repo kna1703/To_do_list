@@ -1,8 +1,5 @@
 :root {
-  --main-color: #d6b3df;
-  --second-color: #E1E1E1;
-  --headertitle: #DFCBCB;
-  --main-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -11,29 +8,34 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;
-  background-color: var(--main-color);
+  background: linear-gradient #D65DB1;
   margin: 5vh;
 }
 
 .LogoHeader {
-  width: 30vh;
+  height: 6vh;
+  display: block;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #515151);
 }
 
 body {
   line-height: 1.5;
   font-family: var(--main-font);
-  background-color: var(--main-color);
+  background: linear-gradient(#FF847D, #D65DB1);
   width: 100%;
   height: 80vh;
 }
 
-h4 {
-  padding: 3vh 0vh 1vh 0vh;
-  font-size: 20px;
-}
+
 
 h2 {
   display: flex;
@@ -68,13 +70,15 @@ footer {
   justify-content: center;
   bottom: 0;
   width: 100%;
-  background-color: var(--main-color);
+  background: linear-gradient #D65DB1;
   text-align: center;
+  padding: 2vh;
 }
 
 .footerLogo {
   height: 2vh;
   display: inline-block;
+  -webkit-filter: drop-shadow(2px 2px 2px #515151);
 }
 
 img {
@@ -130,22 +134,28 @@ img {
 }
 
 /* Mobile style */
-@media only screen and (min-width: 240px) and (max-width: 450px) {
+@media only screen and (min-width: 280px) and (max-width: 450px) {
   .blocSignup {
-    width: auto;
+    width: 90%;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 2vh;
-    margin: 4vh;
+    padding: 2vh 2vh 2vh 2vh;
+  }
+
+  #signupbut {
+    margin-top: 2vh;
   }
 }
 
 /* Tablette style */
 @media only screen and (min-width: 450px) and (max-width: 800px) {
   .blocSignup {
-    width: auto;
-    max-width: 70%;
-    padding: 1vh;
+    width: 90%;
+    padding: 2vh 2vh 2vh 2vh;
+  }
+
+  #signupbut {
+    margin-top: 2vh;
   }
 }
 
@@ -153,12 +163,12 @@ img {
 @media only screen and (min-width: 801px) {
   .blocSignup {
     width: auto;
-    max-width: 40%;
-    padding: 1vh;
+    max-width: 30%;
+    padding: 2vh 2vh 2vh 2vh;
   }
 
-  #buttonSignup {
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+  #signupbut {
+    width: auto;
+    margin-top: 2vh;
   }
 }
