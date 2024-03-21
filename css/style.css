@@ -17,6 +17,19 @@ html {
 
 body {
   background: linear-gradient(#FF847D, #D65DB1);
+  font-family: var(--main-font);
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#FF847D);
+}
+
+body {
+  background: linear-gradient(#FF847D, #D65DB1);
+  font-family: var(--main-font);
 }
 
 /* header */
@@ -28,11 +41,13 @@ body {
 .appLogo {
   height: 3rem;
   margin: 2rem;
+  -webkit-filter: drop-shadow(5px 5px 5px #515151);
 }
 
 .profileLogo {
   height: 4rem;
   margin: 2rem;
+  -webkit-filter: drop-shadow(3px 3px 3px #515151);
 }
 
 .profileLogo:hover {
@@ -48,6 +63,7 @@ nav {
 
 .navLogo {
   height: 5rem;
+  -webkit-filter: drop-shadow(3px 3px 3px #515151);
 }
 
 .navLogo:hover {
@@ -203,8 +219,9 @@ footer {
 }
 
 .footerLogo {
-  height: 1rem;
+  height: 2vh;
   display: inline-block;
+  -webkit-filter: drop-shadow(2px 2px 2px #515151);
 }
 
 /* Responsive */
