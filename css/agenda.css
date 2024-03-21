@@ -66,9 +66,7 @@ nav {
 
 
 .wrapper {
-  /* max-width: 1100px; */
   margin-bottom: 5rem;
-  /* height: 50vh; */
 }
 
 /* Calendar container */
@@ -301,16 +299,13 @@ button:hover {
 }
 
 
-
-
-
+/* footer */
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   padding: 1rem;
   position: absolute;
   bottom: 0;
@@ -351,6 +346,7 @@ footer {
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
+
 
   .container-calendar {
     flex-wrap: wrap;
