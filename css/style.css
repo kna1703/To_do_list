@@ -100,6 +100,7 @@ nav {
 
 #input-box {
   background-color: #EAE3E3;
+  margin-bottom: 1rem;
 }
 
 
@@ -123,6 +124,7 @@ button {
   border-radius: 40px;
   background-color: var(--secondary-color);
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 button:hover {
@@ -210,6 +212,15 @@ ul li.checked::before {
   background-color: white;
 }
 
+.save {
+  border: none;
+  /* outline: none; */
+  padding: 6px 14px;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
 /* Footer */
 
 footer {
@@ -233,6 +244,9 @@ footer > p {
   height: 2vh;
   display: inline-block;
   -webkit-filter: drop-shadow(2px 2px 2px #515151);
+}
+footer>p {
+  
 }
 
 /* Responsive */
