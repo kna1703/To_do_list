@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name = "Sign Up - Tout Doux" content="Listez vos tâches du quotidien grâce à Tout Doux. Ecrivez, modifiez, supprimez, cochez, planifiez vos tâches - Sign Up" />
-    <link rel="stylesheet" href="../css/SignUp.css"/>
-    <title>Sign Up | Tout Doux</title>
-    <link rel="icon" type="image/x-icon" href="../images/check-lg.svg">
-  </head>
 
-  <body>
-    <header>
-      <img src="../images/td6.png" class="LogoHeader" alt="logo" />
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Sign Up - Tout Doux"
+    content="Listez vos tâches du quotidien grâce à Tout Doux. Ecrivez, modifiez, supprimez, cochez, planifiez vos tâches - Sign Up" />
+  <link rel="stylesheet" href="../css/SignUp.css" />
+  <title>Sign Up | Tout Doux</title>
+  <link rel="icon" type="image/x-icon" href="../images/check-lg.svg">
+</head>
 
-    <main>
-      <div class="blocSignup">
-        <form id="form" action="../html/index.html">
-          <h2>Sign Up</h2>
-          <div class="input-control">
-            <label for="username">UserName*</label>
-            <input id="username" name="username" type="text" />
-            <div class="error"></div>
-          </div>
+<body>
+  <header>
+    <a href="../html/index.html"><img src="../images/td6.png" class="LogoHeader" alt="logo" /></a>
+  </header>
 
-          <div class="input-control">
-            <label for="email">Email*</label>
-            <input id="email" name="email" type="text" />
-            <div class="error"></div>
-          </div>
+  <main>
+    <div class="blocSignup">
+      <form id="form" action="../html/index.html">
+        <h2>Sign Up</h2>
+        <div class="input-control">
+          <label for="username">UserName*</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
 
-          <div class="input-control">
-            <label for="password">Password*</label>
-            <input id="password" name="password" type="password" />
-            <div class="error"></div>
-          </div>
+        <div class="input-control">
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
 
-          <div class="input-control">
-            <label for="password2">Confirm Password*</label>
-            <input id="password2" name="password2" type="password" />
-            <div class="error"></div>
-          </div>
+        <div class="input-control">
+          <label for="password">Password*</label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
 
-          <button id="signupbut" type="submit">Create Account</button>
-        </form>
-      </div>
-    </main>
+        <div class="input-control">
+          <label for="password2">Confirm Password*</label>
+          <input id="password2" name="password2" type="password" />
+          <div class="error"></div>
+        </div>
 
-    <footer>
-      <p>©️</p><img src="../images/td6.png" alt="Tout Doux logo" class="footerLogo" />
-      
-    </footer>
-    <script src="../js/SignUp.js"></script>
-  </body>
+        <button id="signupbut" type="submit">Create Account</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>©️</p><img src="../images/td6.png" alt="Tout Doux logo" class="footerLogo" />
+
+  </footer>
+  <script src="../js/SignUp.js"></script>
+</body>
+
 </html>
