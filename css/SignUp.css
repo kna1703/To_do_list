@@ -43,12 +43,12 @@ body {
   height: 80vh;
 }
 
-
-
-h2 {
+.signuptitle {
   display: flex;
   justify-content: center;
-  margin: 2vh 1vh 2vh 1vh;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 2vh 0vh 2vh 0vh;
 }
 
 .mainSignUp,
@@ -104,15 +104,17 @@ img {
 .input-control {
   display: flex;
   flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .input-control input {
-  border: 0.5vh solid #DFDFDF;
+  border: none;
   display: block;
-  padding: 1.5vh;
+  height: 5vh;
   width: 100%;
-  background-color: #DFDFDF;
-  border-radius: 4vh;
+  background-color: #EAE3E3;
+  border-radius: 10px;
 }
 
 .input-control input:focus {
@@ -134,19 +136,24 @@ img {
 }
 
 
-
-
 #signupbut {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border-radius: 5vh;
-  margin-top: 5vh;
-  height: 5vh;
-  width: 21vh;
+  border-radius: 10px;
+  width:21vh;
+  height: 4vh;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
   border: none;
   background-color: var(--secondary-color);
+  color:white;
+}
+
+#signupbut:hover {
+  transform: scale(1.1);
 }
 
 /* Mobile style */
@@ -155,7 +162,7 @@ img {
     width: 90%;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2em;
   }
 
   #signupbut {
@@ -167,7 +174,7 @@ img {
 @media only screen and (min-width: 450px) and (max-width: 800px) {
   .blocSignup {
     width: 90%;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2em;
   }
 
   #signupbut {
@@ -180,7 +187,7 @@ img {
   .blocSignup {
     width: auto;
     max-width: 30%;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2em;
   }
 
   #signupbut {
