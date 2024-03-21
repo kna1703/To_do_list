@@ -1,44 +1,12 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const buttonSignup = document.getElementById('buttonSignup');
-
-//   if (buttonSignup) {
-//     buttonSignup.addEventListener('click', function (event) {
-//       event.preventDefault();
-
-//       const username = document.querySelector('.blocSignup .UserName input').value.trim();
-//       const email = document.querySelector('.blocSignup .EnterEmail input').value.trim();
-//       const password = document.querySelector('.blocSignup .Password input').value;
-//       const confirmPassword = document.querySelector('.blocSignup .ConfirmPassword input').value;
-
-//       const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-//       if (username === '' || !emailRegex.test(email) || password === '' || confirmPassword === '') {
-//         alert('Please fill in all fields correctly.');
-//       } else if (password !== confirmPassword) {
-//         alert('Passwords do not match.');
-//       } else {
-//         // Redirect to index.html
-// window.location.href = '../html/index.html';
-//         // Display alert
-//         alert('Account created!');
-//       }
-//     });
-//   }
-// });
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-const submit = document.getElementById('submit');
-
-
-
+const submit = document.querySelector('#signupbut');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-
   validateInputs();
 });
 
@@ -71,7 +39,6 @@ const validateInputs = () => {
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
 
-
   if (usernameValue === '') {
     setError(username, 'Username is required');
   } else {
@@ -89,7 +56,7 @@ const validateInputs = () => {
   if (passwordValue === '') {
     setError(password, 'Password is required');
   } else if (passwordValue.length < 8) {
-    setError(password, 'Password must be at least 8 character.')
+    setError(password, 'Password must be at least 8 characters long.')
   } else {
     setSuccess(password);
   }
@@ -97,49 +64,9 @@ const validateInputs = () => {
   if (password2Value === '') {
     setError(password2, 'Please confirm your password');
   } else if (password2Value !== passwordValue) {
-    setError(password2, "Passwords doesn't match");
+    setError(password2, "Passwords don't match");
   } else {
     setSuccess(password2);
+    window.location.href = "../html/index.html";
   }
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function checkInput(UserName, Email, Password, ConfirmPassword) {
-//     if (check.value === "") {
-//         alert("Please enter details");
-//     } else {
-//         window.location.href = "SignUp.html";
-//     }
-// }
