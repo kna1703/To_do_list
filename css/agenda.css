@@ -92,7 +92,7 @@ nav {
   border: 1px solid #ccc;
 }
 
-.container-calendar #left h1 {
+.container-calendar #left h2 {
   color: var(--text-color);
   text-align: center;
   background-color: #f2f2f2;
@@ -100,7 +100,7 @@ nav {
   padding: 10px 0;
 }
 
-h1 {
+h2 {
   border-radius: 20px;
 }
 
@@ -267,7 +267,7 @@ button:hover {
   text-align: center;
   margin-top: 0;
   padding: 0.5rem;
-  font-size: 1.7em;
+  
 }
 
 /* Navigation buttons */
@@ -354,30 +354,13 @@ footer {
     height: unset;
   } */
 
-  #right {
-    width: 100%;
-    padding: 0em 5em 0em 5em;
-  }
+  
   #monthAndYear {
     padding-bottom: 0.8em;
   }
-  .button-container-calendar button{
-    height: 4.7vh;
-    width: 3.8vw;
-    font-size: 1.3em;
-  }
+  
 }
-@media screen and (min-width: 400px) and (max-width: 660px) {
-  .button-container-calendar button{
-    height: 4.2vh !important;
-    width: 2.8vw !important;
-    font-size: 1.1em !important;
-  }
-  #right {
-    width: 100% !important;
-    padding: 0em 1em 0em 1em !important;
-  }
-}
+
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
 
@@ -402,6 +385,10 @@ footer {
   .appLogo {
     height: 3rem;
     margin: 1rem;
+  }
+  
+  #right {
+   
   }
 
 }
