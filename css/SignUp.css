@@ -4,7 +4,7 @@
   --primary-color: #FF847D;
   --secondary-color: #D65DB1;
   --block-color: #f7f5f2;
-} 
+}
 
 * {
   margin: 0;
@@ -92,7 +92,7 @@ footer {
 }
 
 
-footer > p {
+footer>p {
   color: var(--footer-color);
   padding-right: 0.5rem;
 }
