@@ -10,9 +10,7 @@ button.addEventListener("click", () => {
         window.location.href = '../html/index.html'; 
     } 
     else {
-        alert("Please enter a valid email address.");
+        alert("Please enter a valid email.");
         
     }
 });
-
-
