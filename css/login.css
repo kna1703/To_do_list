@@ -64,11 +64,11 @@ main {
 }
 
 .bloclogin {
-    padding: 16px 25px 16px 25px;
+    padding: 20px 30px 20px 30px;
     width: 95%;
     max-width: 70vh;
     margin: 0 auto;
-    background: white;
+    background: var(--block-color);
     border-radius: 10px;
 }
 
@@ -104,6 +104,7 @@ input {
     margin-bottom: 10px;
     font-size: 15px;
     background-color: var(--secondary-color);
+    color:white;
 }
 
 .buttonlogin:hover {
@@ -195,6 +196,7 @@ input {
 .bloclogin {
     width: auto;
     max-width: 80%;
+    padding: 2em;
 
 }
   }
@@ -204,6 +206,7 @@ input {
 .bloclogin {
     width: auto;
     max-width: 70%;
+    padding: 2em;
 
 }
   }
@@ -213,6 +216,7 @@ input {
 .bloclogin {
     width: auto;
     max-width: 80%;
+    padding: 2em;
 
     }
 
