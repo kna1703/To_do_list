@@ -41,14 +41,14 @@ body {
   -webkit-filter: drop-shadow(5px 5px 5px #515151);
 }
 
-.appLogo:hover{
-    transform: scale(1.1);
+.appLogo:hover {
+  transform: scale(1.1);
 }
 
 .profileLogo {
   height: 4rem;
   margin: 2rem;
-  -webkit-filter: drop-shadow(3px 3px 3px  #945259);
+  -webkit-filter: drop-shadow(3px 3px 3px #945259);
 }
 
 .profileLogo:hover {
@@ -67,7 +67,7 @@ nav {
 
 .navLogo {
   height: 5rem;
-  -webkit-filter: drop-shadow(3px 3px 3px  #945259);
+  -webkit-filter: drop-shadow(3px 3px 3px #945259);
 }
 
 .navLogo:hover {
@@ -79,9 +79,7 @@ nav {
 
 
 .wrapper {
-  /* max-width: 1100px; */
   margin-bottom: 5rem;
-  /* height: 50vh; */
 }
 
 /* Calendar container */
@@ -280,7 +278,7 @@ button:hover {
   text-align: center;
   margin-top: 0;
   padding: 0.5rem;
-  
+
 }
 
 /* Navigation buttons */
@@ -315,12 +313,14 @@ button:hover {
   padding: 5px 1em;
 }
 
+
+/* footer */
+
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   padding: 1rem;
   position: absolute;
   bottom: 0;
@@ -333,7 +333,7 @@ footer {
   -webkit-filter: drop-shadow(2px 2px 2px #515151);
 }
 
-footer > p {
+footer>p {
   color: var(--footer-color);
   padding-right: 0.5rem;
 }
@@ -367,15 +367,16 @@ footer > p {
     height: unset;
   } */
 
-  
+
   #monthAndYear {
     padding-bottom: 0.8em;
   }
-  
+
 }
 
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
+
 
   .container-calendar {
     flex-wrap: wrap;
@@ -399,10 +400,8 @@ footer > p {
     height: 3rem;
     margin: 1rem;
   }
-  
-  #right {
-   
-  }
+
+  #right {}
 
 }
 

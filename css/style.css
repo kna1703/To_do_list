@@ -107,7 +107,7 @@ nav {
 input {
   flex: 1;
   border: none;
-  /* outline: none; */
+  outline: none;
   border-radius: 40px;
   padding: 10px;
 }
@@ -184,7 +184,7 @@ ul li.checked::before {
 
 .delete {
   right: 0;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
 }
 
