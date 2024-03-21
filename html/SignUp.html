@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/SignUp.css"/>
+    <link rel="stylesheet" href="../css/signup.css" />
     <title>Sign Up</title>
   </head>
+
   <body>
     <header>
       <img src="../images/td4.png" class="LogoHeader" alt="logo" />
@@ -13,34 +14,34 @@
 
     <main>
       <div class="blocSignup">
-        <h2>Sign Up</h2>
-        <form class="SignUp">
-          <label>
-            <h4>UserName*</h4>
-          </label>
-          <span class="UserName">
-            <input type="text" name="UserName" required />
-          </span>
-          <label>
-            <h4>Email*</h4>
-          </label>
-          <span class="EnterEmail">
-            <input type="email" name="email" required />
-          </span>
-          <label>
-            <h4>Password*</h4>
-          </label>
-          <span class="Password">
-            <input type="password" name="Password" required
-          /></span>
-          <label>
-            <h4>Confirm Password*</h4>
-          </label>
-          <span class="ConfirmPassword">
-            <input type="password" name="ConfirmPassword" required/>
-          </span>
-          <button id="buttonSignup">Create Account</button>
-          </form>
+        <form id="form" action="../html/index.html">
+          <h2>Sign Up</h2>
+          <div class="input-control">
+            <label for="username">UserName*</label>
+            <input id="username" name="username" type="text" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="text" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="password">Password*</label>
+            <input id="password" name="password" type="password" />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+            <label for="password2">Confirm Password*</label>
+            <input id="password2" name="password2" type="password" />
+            <div class="error"></div>
+          </div>
+
+          <button id="signupbut" type="submit">Create Account</button>
+        </form>
       </div>
     </main>
 
