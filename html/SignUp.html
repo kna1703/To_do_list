@@ -10,15 +10,15 @@
 
   <body>
     <header>
-      <img src="../images/td6.png" class="LogoHeader" alt="logo" />
+      <img src="../images/td6.png" class="LogoHeader" alt="logo" onclick="javascript:window.location.href = '../html/index.html'" />
     </header>
 
     <main>
       <div class="blocSignup">
         <form id="form" action="../html/index.html">
-          <h2>Sign Up</h2>
+          <p class="signuptitle">Sign Up</p>
           <div class="input-control">
-            <label for="username">UserName*</label>
+            <label for="username">Username*</label>
             <input id="username" name="username" type="text" />
             <div class="error"></div>
           </div>
@@ -36,7 +36,7 @@
           </div>
 
           <div class="input-control">
-            <label for="password2">Confirm Password*</label>
+            <label for="password2">Confirm password*</label>
             <input id="password2" name="password2" type="password" />
             <div class="error"></div>
           </div>
