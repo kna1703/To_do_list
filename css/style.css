@@ -133,6 +133,7 @@ button {
   background-color: var(--secondary-color);
   cursor: pointer;
   margin-bottom: 1rem;
+  color: #EAE3E3;
 }
 
 button:hover {
@@ -254,7 +255,6 @@ footer>p {
   -webkit-filter: drop-shadow(2px 2px 2px #515151);
 }
 
-footer>p {}
 
 /* Responsive */
 
