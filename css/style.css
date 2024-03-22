@@ -56,6 +56,18 @@ body {
   -webkit-filter: drop-shadow(3px 3px 3px #945259);
 }
 
+.profileContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .profileLogo:hover {
   transform: scale(1.1);
 }
