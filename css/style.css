@@ -121,6 +121,7 @@ button {
   background-color: var(--secondary-color);
   cursor: pointer;
   margin-bottom: 1rem;
+  color: #EAE3E3;
 }
 
 button:hover {
